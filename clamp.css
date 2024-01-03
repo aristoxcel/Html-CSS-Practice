@@ -1,0 +1,15 @@
+.clamp__learn{
+    background-color: blue;
+    width: clamp(300px, 50%, 800px);
+    height: 300px  ;
+}
+
+.image_learn>img{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    block-size: cover;
+    shape-margin: 1rem ;
+    font-style: italic;
+}
