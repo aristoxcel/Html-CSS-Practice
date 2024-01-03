@@ -6,10 +6,87 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="./font.html">HOME</a>
-    <a href="./about.html">About</a>
-    <a href="./contact.html">Contact</a>
-    <a href="https://www.google.com/" target="blank">visit Google</a>
-    <h1>I am about page</h1>
+    <style>
+    
+        .container{
+            background-color: antiquewhite;
+            height: 100svh;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 20svh 50svh 10svh;
+            border: 2px solid tomato;
+        }
+        header, .menu, .content, footer {
+            box-sizing: border-box;
+        }
+        header{
+            background-color: tomato;
+            color: white;
+           text-align: center;
+        }
+        header a{
+            color: aliceblue;
+            text-decoration: none;
+            padding: 3px;
+        }
+        header a:hover{
+            color: cyan;
+            font-weight: bold;
+            border-bottom: 5px solid wheat;
+            border-radius: 6px;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        .menu{
+            grid-column: 1/2;
+            background-color: teal;
+            padding-top: 50px;
+            padding-left: clamp(10px 10% 30px);
+            padding-right: 5px;
+        }
+        .content{
+            grid-column: 2/-1 ;
+            background-color: skyblue;
+            padding-left: 10%;
+            padding-right:10%;
+            text-align: justify;
+        }
+        footer{
+            background-color: gray;
+            color: wheat;
+            padding-left: 30px;
+        }
+
+    </style>
+    
+    <div class="container">
+        <header><a href="./font.html">HOME</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="https://www.google.com/" target="blank">visit Google</a>
+            <h1>I am about page</h1>
+        </header>
+        <main>
+            <div class="menu">
+                <ul>
+                    <li>Skill</li>
+                    <li>Project</li>
+                    <li>Education</li>
+                    <li>Experience</li>
+                    <li>Address</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>About me some point</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium aperiam nulla repudiandae delectus? Modi excepturi id ducimus vero laboriosam natus accusantium, reiciendis dolores! Officiis ipsum accusantium, ex voluptate error minus.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium aperiam nulla repudiandae delectus? Modi excepturi id ducimus vero laboriosam natus accusantium, reiciendis dolores! Officiis ipsum accusantium, ex voluptate error minus.</p>
+            </div>
+        </main>
+        <footer>
+            <p>Authentic, Industrious, Well behavior </p>
+        </footer>
+    </div>
 </body>
 </html>
